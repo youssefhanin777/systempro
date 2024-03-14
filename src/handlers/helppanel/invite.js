@@ -20,24 +20,6 @@ module.exports = async (client) => {
                                     emoji: "💻",
                                     value: "commands-Bothelp",
                                 },
-                                {
-                                    label: `Invite`,
-                                    description: `Invite ${client.user.username} to your server`,
-                                    emoji: "📨",
-                                    value: "invite-Bothelp",
-                                },
-                                {
-                                    label: `Support server`,
-                                    description: `Join the suppport server`,
-                                    emoji: "❓",
-                                    value: "support-Bothelp",
-                                },
-                                {
-                                    label: `Changelogs`,
-                                    description: `Show the ${client.user.username} bot changelogs`,
-                                    emoji: "📃",
-                                    value: "changelogs-Bothelp",
-                                },
                             ]),
                     );
 
