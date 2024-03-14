@@ -196,3 +196,28 @@ process.on('warning', warn => {
         console.log(warn)
     })
 });
+//-------------------------------------------------
+    const statuses = [
+        ' | GP ON THE TOP'
+    ];
+    let i = 0;
+    setInterval(() => {
+        client.user.setActivity(statuses[i], {
+            type: 'STREAMING',
+            url: 'https://www.twitch.tv/youzarx'
+        });
+        i = ++i % statuses.length;
+    }, 1e4);
+//-------------------------------------------------
+const express = require("express")
+const app = express();
+var listener = app.listen(process.env.PORT || 2000, function () {
+  console.log('Your app is listening on port ' + listener.address().port);
+});
+app.listen(() => console.log("I'm Ready To Work..! 24H"));
+app.get('/', (req, res) => {
+  res.send(`
+  <body>
+  <center><h1>Bot 24H ON!</h1></center
+  </body>`)
+});
