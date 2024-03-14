@@ -270,7 +270,7 @@ module.exports = async (client) => {
                             if (page == 1) {
                                 client.embed({
                                     title: `❓・Help panel`,
-                                    desc: `View all command categories in the bot here! \n\n[Website](https://linktr.ee/youssefhanin) | [Invite](${client.config.discord.botInvite}) | [Vote](https://top.gg/bot)`,
+                                    desc: `View all command categories in the bot here! \n\n[Website](https://linktr.ee/youssefhanin)`,
                                     fields: fields.slice(25, 49),
                                     components: [row2, row],
                                     type: 'update'
