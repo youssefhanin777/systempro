@@ -46,7 +46,7 @@ module.exports = async (client) => {
 
                         new Discord.ButtonBuilder()
                             .setLabel("Vote Now")
-                            .setURL("https://top.gg/bot/798144456528363550/vote")
+                            .setURL("https://top.gg/bot")
                             .setStyle(Discord.ButtonStyle.Link),
                     );
 
