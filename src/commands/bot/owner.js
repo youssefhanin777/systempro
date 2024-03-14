@@ -22,7 +22,7 @@ module.exports = async (client, interaction, args) => {
         },
         {
             name: "🌐┆Website",
-            value: `[https://linktr.ee/youssefhanin](https://linktr.ee/youssefhanin)`,
+            value: `(https://linktr.ee/youssefhanin)`,
             inline: true,
         }],
         type: 'editreply'
