@@ -87,9 +87,9 @@ if (clientID && clientSecret) {
         ],
         nodes: [
             {
-                host: process.env.LAVALINK_HOST || "lava.link",
-                port: parseInt(process.env.LAVALINK_PORT) || 80,
-                password: process.env.LAVALINK_PASSWORD || "CorwinDev"
+                host: process.env.LAVALINK_HOST || "lava-v3.ajieblogs.eu.org",
+                port: parseInt(process.env.LAVALINK_PORT) || 443,
+                password: process.env.LAVALINK_PASSWORD || "https://dsc.gg/ajidevserver"
             },
         ],
         send(id, payload) {
