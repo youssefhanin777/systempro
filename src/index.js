@@ -196,16 +196,3 @@ process.on('warning', warn => {
         console.log(warn)
     })
 });
-//-------------------------------------------------
-    const statuses = [
-        ' | GP ON THE TOP'
-    ];
-    let i = 0;
-    setInterval(() => {
-        client.user.setActivity(statuses[i], {
-            type: 'STREAMING',
-            url: 'https://www.twitch.tv/youzarx'
-        });
-        i = ++i % statuses.length;
-    }, 1e4);
-//-------------------------------------------------
