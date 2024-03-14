@@ -27,6 +27,12 @@ module.exports = async (client) => {
                                     value: "invite-linkspanel",
                                 },
                                 {
+                                    label: `Invite Bot 2`,
+                                    description: `Invite Bot 2 to your server`,
+                                    emoji: "📕",
+                                    value: "invite2-linkspanel",
+                                },
+                                {
                                     label: `Community Server`,
                                     description: `Join the community server!`,
                                     emoji: "🌍",
@@ -46,7 +52,7 @@ module.exports = async (client) => {
 
                         new Discord.ButtonBuilder()
                             .setLabel("Vote Now")
-                            .setURL("https://top.gg/bot")
+                            .setURL("https://top.gg/bot/798144456528363550/vote")
                             .setStyle(Discord.ButtonStyle.Link),
                     );
 
@@ -54,13 +60,13 @@ module.exports = async (client) => {
                     title: `📃・Bot Vote`,
                     desc: `Vote for Bot on top.gg`,
                     image: "https://cdn.discordapp.com/attachments/843487478881976381/874694192755007509/Bot_banner_vote.jpg",
-                    url: "https://top.gg/bot/798144456528363550/vote",
+                    url: "https://top.gg",
                     components: [row2, row],
                     type: 'edit'
                 }, interaction.message)
             }
         }
-    })
+    }).setMaxListeners(0);
 }
 
  
